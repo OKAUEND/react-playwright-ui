@@ -12,8 +12,7 @@ export const Mui = () =>{
             <h1>Material UI</h1>
             <TextField
                 error={isError}
-                id="outlined-error-helper-text"
-                label="Error"
+                aria-label="input-field"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 helperText={isError ? "入力内容が不正です" : ""}
